@@ -69,9 +69,9 @@ function setLightSwitch(value: boolean) {
 }
 ```
 컴파일 과정에서 setLightSwitch 의 인자에 boolean 값이 아닌 다른것을 전송했다면  
-에러를 검출해주겠지만,  
+에러를 검출해주거나 default문을 실행하지 않을 것이라 생각했으나,  
 아닌 경우도 있음  
-ex) 서버에서 비동기로 받아온 값을 인자로 보냈을 시  
+ex) 서버 호출 후 받아온 값을 인자로 보냈을 시  
 ex)
 ```ts
 let a:any = 3;
@@ -89,5 +89,18 @@ function setLightSwitch(value: boolean) {
 }
 setLightSwitch(a)
 ```
-any타입을 보내면 boolean일 수도 있다고 생각을 해 그냥 컴파일을 해줌
+any타입을 보내면 boolean일 수도 있다고 생각을 해 그냥 컴파일을 해줌  
+설정값에 따라 다를 수 있지만  
+타입스크립트의 컨셉은  
+실제 값과 타입의 비교가 아닌  
+타입과 타입의 비교인듯  
+
+위 코드로 풀어말하자면  
+a의 값은 숫자 타입이라 setLightSwitch의 인자로 사용시 에러가 날 것 같지만  
+실제로는 a의 값인 숫자에 주목하는게 아닌 부여받은 타입인 any에 관심이 치중되어 있어  
+any > boolean의 개념이 적용된 듯  
+
+
+
+
 
