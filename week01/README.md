@@ -71,7 +71,7 @@ function setLightSwitch(value: boolean) {
 컴파일 과정에서 setLightSwitch 의 인자에 boolean 값이 아닌 다른것을 전송했다면  
 에러를 검출해주겠지만,  
 아닌 경우도 있음  
-ex) 서버에서 비동기로 받아온 값을 인자로 보냈을 시
+ex) 서버에서 비동기로 받아온 값을 인자로 보냈을 시  
 ex)
 ```ts
 let a:any = 3;
