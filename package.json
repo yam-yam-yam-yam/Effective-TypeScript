@@ -1,0 +1,22 @@
+{
+  "name": "effective-typescript",
+  "version": "1.0.0",
+  "description": "2023.03.20(월)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yam-yam-yam-yam/Effective-TypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yam-yam-yam-yam/Effective-TypeScript/issues"
+  },
+  "homepage": "https://github.com/yam-yam-yam-yam/Effective-TypeScript#readme",
+  "dependencies": {
+    "typescript": "^5.0.2"
+  }
+}
